@@ -1,12 +1,15 @@
-
-
-
-
-
-
+function widthGreenLine(elems) {
+	if (!elems) return
+		console.log(elems)
+	for (let elem of elems) {
+		let line = elem.querySelector('.growLine')
+		let pers = elem.previousElementSibling.querySelector('.rateLine').innerHTML
+		line.style.width = pers + '%'
+	}
+}
+widthGreenLine(document.querySelectorAll('.baseLine'))
 document.querySelector('.milleseconds').innerHTML = Date.now() - new Date(2016)
 document.querySelector('.year').innerHTML = new Date().getFullYear()
-
 function Slider(options) {
 	let elem = options.elem
 	let prev = options.prev
@@ -33,7 +36,6 @@ new Slider({
 	prev: document.querySelector('.prev'),
 	next: document.querySelector('.next')
 })
-
 window.onscroll = function () {
 	arrowUp.hidden = document.documentElement.clientHeight / 2 > document.documentElement.scrollTop
 }
