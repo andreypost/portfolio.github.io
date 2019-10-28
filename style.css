@@ -265,7 +265,7 @@ main {
 	border: 5px solid white;
 }
 .secondIcon {
-	background: url(images/portfolio_img_2.png) center center no-repeat;
+	background: url(images/portfolio_img_2.jpg) center center no-repeat;
 	background-size: cover;
 }
 .thirdIcon {
@@ -310,10 +310,14 @@ main {
 	min-height: 220px;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+	align-items: baseline;
 	position: relative;
 }
 .slider > div {
+	/* display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-between; */
     position: absolute;
     opacity: 1;
     transition: 1s all;
@@ -322,8 +326,8 @@ main {
 	opacity: 0;
 }
 .slider h3 {
-	margin-left: 15px;
-	letter-spacing: 16px;
+	letter-spacing: 10px;
+	margin-left: 10px;
 }
 
 /* .slider > div > p {
@@ -344,6 +348,9 @@ main {
 .slider i {
 	width: 128px;
 	height: 128px;
+}
+.sun {
+	background: url(images/sun.png);
 }
 .battery {
 	background: url(images/battery.png);
@@ -524,7 +531,4 @@ footer p {
 	button {
 		width: 75%;
 	}
-	.slider {
-   		height: 360px;
-    }
 }
