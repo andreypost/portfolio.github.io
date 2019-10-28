@@ -1,6 +1,5 @@
 function widthGreenLine(elems) {
 	if (!elems) return
-		console.log(elems)
 	for (let elem of elems) {
 		let line = elem.querySelector('.growLine')
 		let pers = elem.previousElementSibling.querySelector('.rateLine').innerHTML
@@ -53,24 +52,24 @@ arrowUp.onclick = function (e) {
 					if (window.pageYOffset < 1) clearInterval(timer)
 				},25)*/
 }
-btnSubmit.onclick = function (e) {
-	// e.preventDefault()
-	let width = document.documentElement.clientWidth
-	let right = parseInt(getComputedStyle(arrowUp).right)
-	showCover(width, right)
-	let form = document.createElement('div')
-	form.id = 'modalId'
-	form.insertAdjacentHTML('beforeend', '<button id="ok">Thanks!</button>')
-	document.body.append(form)
-	ok.onclick = function () {
-		hideCover(width, right)
-	}
-	document.onkeydown = function (e) {
-		if (e.key == 'Escape') {
-			hideCover(width, right)
-		}
-	}
-}
+// btnSubmit.onclick = function (e) {
+// 	// e.preventDefault()
+// 	let width = document.documentElement.clientWidth
+// 	let right = parseInt(getComputedStyle(arrowUp).right)
+// 	showCover(width, right)
+// 	let form = document.createElement('div')
+// 	form.id = 'modalId'
+// 	form.insertAdjacentHTML('beforeend', '<button id="ok">Thanks!</button>')
+// 	document.body.append(form)
+// 	ok.onclick = function () {
+// 		hideCover(width, right)
+// 	}
+// 	document.onkeydown = function (e) {
+// 		if (e.key == 'Escape') {
+// 			hideCover(width, right)
+// 		}
+// 	}
+// }
 function showCover(width, right) {
 	coverId.hidden = false
 	document.body.style.overflow = 'hidden'

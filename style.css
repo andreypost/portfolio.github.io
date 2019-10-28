@@ -74,7 +74,7 @@ header {
 	position: relative;
 }
 nav, section {
-	/*width: 100%;*/
+	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 20px;
@@ -210,7 +210,8 @@ main {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-  	grid-gap: 15px;
+	grid-gap: 30px;
+	margin-bottom: 40px;
 }
 .first,.second,.third,
 .fourth,.fifth,.sixth {
@@ -250,32 +251,26 @@ main {
 }
 .block5 article article {
 	flex: 6;
+	margin-bottom: 40px;
 }
 .block5 a:first-child {
 	text-decoration: underline;
 }
-.firstIcon,.secondIcon,.thirdIcon,
-.fourthIcon,.fifthIcon,.sixthIcon {
+.firstIcon,.secondIcon,.thirdIcon {
 	width: 220px;
 	height: 220px;
 	margin: 10px;
-	background: url(images/lapchenko.png) center center no-repeat;
+	background: url(images/portfolio_img_1.jpg) center center no-repeat;
+	background-size: cover;
 	border: 5px solid white;
 }
 .secondIcon {
 	background: url(images/portfolio_img_2.png) center center no-repeat;
+	background-size: cover;
 }
 .thirdIcon {
-	background: url(images/portfolio_img_3.png) center center no-repeat;
-}
-.fourthIcon {
-	background: url(images/portfolio_img_4.png) center center no-repeat;
-}
-.fifthIcon {
-	background: url(images/portfolio_img_5.png) center center no-repeat;
-}
-.sixthIcon {
-	background: url(images/portfolio_img_6.png) center center no-repeat;
+	background: url(images/portfolio_img_3.jpg) center center no-repeat;
+	background-size: cover;
 }
 /*block6*/
 .block6 {
@@ -287,10 +282,10 @@ main {
 }
 .block6 section > i {
 	position: absolute;
-	top: 62%;
+	top: 47%;
 	opacity: .5;
 	padding: 8px;
-	border: solid cyan;
+	border: solid #62B1F6;
 	border-width: 4px 0 0 4px;
 	z-index: 9999;
 }
@@ -312,61 +307,55 @@ main {
 	margin: auto;
 }
 .slider {
-	height: 180px;
+	min-height: 220px;
 	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	position: relative;
-	overflow: hidden;
 }
 .slider > div {
     position: absolute;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     opacity: 1;
     transition: 1s all;
 }
 .slider .hidden {
 	opacity: 0;
 }
-.slider > div > p {
-	flex: 2 160px;
+.slider h3 {
+	margin-left: 15px;
+	letter-spacing: 16px;
 }
-.slider > div > div {
-	flex: 1 105px;
-} 
-.slider > div > p {
+
+/* .slider > div > p {
 	quotes: "„" "“";
-}
-.slider > div > p:before {
+} */
+/* .slider > div > p:before {
 	font-family: sans-serif;
 	content: open-quote;
 	font-size: 50px;
 	vertical-align: 20px;
-}
-.slider > div > p:after {
+} */
+/* .slider > div > p:after {
 	font-family: sans-serif;
 	content: close-quote;
 	font-size: 50px;
 	vertical-align: -35px;
+} */
+.slider i {
+	width: 128px;
+	height: 128px;
 }
-.afroGirl,
-.sikh,
-.ninja,
-.afroGuy {
-	width: 65px;
-	height: 65px;
-	border: 2px solid white;
-	border-radius: 50%;
-	background: url(images/humans.png) -7px -7px;
+.battery {
+	background: url(images/battery.png);
 }
-.sikh {
-	background: url(images/humans.png) -82px -7px;
+.book {
+	background: url(images/book.png);
 }
-.ninja {
-	background: url(images/humans.png) -157px -7px;
+.briefcase {
+	background: url(images/briefcase.png);
 }
-.afroGuy {
-	background: url(images/humans.png) 68px -7px;
+.group {
+	background: url(images/group.png);
 }
 /* block7 */
 .block7 {
@@ -433,8 +422,8 @@ footer {
 	text-align: center;
 	background: url(images/footer_back.png);
 }
-footer > div {
-	margin: 50px;
+.contact {
+	margin: 50px auto;
 	padding: 20px; 
 	background: #15263e;
 }
