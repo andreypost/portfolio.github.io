@@ -50,14 +50,6 @@ a {
 li {
 	display: block;
 }
-hr {
-    display: block;
-    width: 16px;
-    height: 50px;
-    background: #dcdcde;
-    border-style: inset;
-    border-width: 2px;
-}
 i {
 	display: inline-block;
 	cursor: pointer;
@@ -367,6 +359,7 @@ main {
 /* block7 */
 .block7 {
 	background: linear-gradient(to bottom left, #ff0072, #a21af0);
+	padding-bottom: 40px;
 }
 .block7 .experience * {
 	margin: 10px;
@@ -374,6 +367,14 @@ main {
 .experience h4 {
 	flex: 1;
 	text-align: right;
+}
+.block7 hr {
+    display: block;
+    width: 16px;
+    height: 50px;
+    background: #dcdcde;
+    border-style: inset;
+    border-width: 2px;
 }
 .experience p {
 	flex: 2;
@@ -530,5 +531,16 @@ footer p {
 @media (max-width: 480px) {
 	button {
 		width: 75%;
+	}
+	.block7 article {
+		flex-flow: column;
+	}
+	.block7 .experience article h4,
+	.block7 .experience article p {
+		text-align: center;
+	}
+	.block7 hr {
+		width: 90%;
+		height: 16px;
 	}
 }

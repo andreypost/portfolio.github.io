@@ -7,8 +7,9 @@ function widthGreenLine(elems) {
 	}
 }
 widthGreenLine(document.querySelectorAll('.baseLine'))
-document.querySelector('.milleseconds').innerHTML = Date.now() - new Date(2016)
+document.querySelector('.milleseconds').innerHTML = Date.now() - new Date(2017)
 document.querySelector('.year').innerHTML = new Date().getFullYear()
+document.querySelector('.expYear').innerHTML = new Date().getFullYear() - 2017 + '+'
 function Slider(options) {
 	let elem = options.elem
 	let prev = options.prev
