@@ -183,19 +183,19 @@ main {
     width: 60px;
 	height: 60px;
 	border-radius: 50%;
-    /*background: url(images/phone.png) center center no-repeat, #000;*/
-    background: url(https://img.icons8.com/material/24/000000/phone.png) center center no-repeat,
+	/*background: url(images/phone.png) center center no-repeat, #000;*/
+    background: url(images/phone_02.png) center center no-repeat,
     repeating-radial-gradient(circle, #a21af0 35px, #00FFFF 40px, #a21af0 75px);
 }
 
 .address {
 	/*background: url(images/address.png) center center no-repeat, #000;*/
-	background: url(https://img.icons8.com/material/24/000000/home.png) center center no-repeat,
+	background: url(images/home_02.png) center center no-repeat,
 	repeating-radial-gradient(circle, #a21af0 35px, #00FFFF 40px, #a21af0 75px);
 }
 .email {
 	/*background: url(images/setting.png) center center no-repeat, #000;*/
-	background: url(https://img.icons8.com/material/24/000000/settings.png) center center no-repeat,
+	background: url(images/mail_02.png) center center no-repeat,
 	repeating-radial-gradient(circle, #a21af0 35px, #00FFFF 40px, #a21af0 75px);
 }
 /* block4 */
@@ -532,7 +532,7 @@ footer p {
 	button {
 		width: 75%;
 	}
-	.block7 article {
+	.block3 article, .block7 article {
 		flex-flow: column;
 	}
 	.block7 .experience article h4,
