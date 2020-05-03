@@ -36,9 +36,17 @@ new Slider({
 	prev: document.querySelector('.prev'),
 	next: document.querySelector('.next')
 })
-window.onscroll = function () {
-	arrowUp.hidden = document.documentElement.clientHeight / 2 > document.documentElement.scrollTop
+let arrow = document.getElementById('arrowUp')
+arrow.onclick = () => {
+	window.scrollBy({
+		top: -window.scrollY,
+		behavior: 'smooth'
+	})
 }
+window.onscroll = function () {
+	arrow.hidden = document.documentElement.clientHeight / 2 > document.documentElement.scrollTop
+}
+/*
 arrowUp.onclick = function (e) {
 	let start = Date.now()
 	let timer = setTimeout(function func() {
@@ -52,7 +60,7 @@ arrowUp.onclick = function (e) {
 					window.scrollBy(0, diff)
 					if (window.pageYOffset < 1) clearInterval(timer)
 				},25)*/
-}
+// }
 // btnSubmit.onclick = function (e) {
 // 	// e.preventDefault()
 // 	let width = document.documentElement.clientWidth
@@ -71,18 +79,18 @@ arrowUp.onclick = function (e) {
 // 		}
 // 	}
 // }
-function showCover(width, right) {
-	coverId.hidden = false
-	document.body.style.overflow = 'hidden'
-	document.body.style.paddingRight = document.documentElement.clientWidth - width + 'px'
-	arrowUp.style.right = right + document.documentElement.clientWidth - width + 'px'
-}
-function hideCover(width, right) {
-	coverId.hidden = true
-	document.getElementById('modalId').remove()
-	document.body.style.overflowY = ''
-	document.body.style.paddingRight = 0 + 'px'
-	arrowUp.style.right = right + 'px'
-	document.onkeydown = null
-}
+// const showCover = (width, right) => {
+// 	coverId.hidden = false
+// 	document.body.style.overflow = 'hidden'
+// 	document.body.style.paddingRight = document.documentElement.clientWidth - width + 'px'
+// 	arrowUp.style.right = right + document.documentElement.clientWidth - width + 'px'
+// }
+// const hideCover = (width, right) => {
+// 	coverId.hidden = true
+// 	document.getElementById('modalId').remove()
+// 	document.body.style.overflowY = ''
+// 	document.body.style.paddingRight = 0 + 'px'
+// 	arrowUp.style.right = right + 'px'
+// 	document.onkeydown = null
+// }
 
