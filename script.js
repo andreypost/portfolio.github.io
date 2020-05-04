@@ -1,38 +1,32 @@
-function widthGreenLine(elems) {
-	if (!elems) return
+const widthGreenLine = (elems) => {
 	for (let elem of elems) {
-		let line = elem.querySelector('.growLine')
-		let pers = elem.previousElementSibling.querySelector('.rateLine').innerHTML
-		line.style.width = pers + '%'
+		elem.querySelector('.growLine').style.width = elem.previousElementSibling.querySelector('.rateLine').innerHTML + '%'
 	}
 }
 widthGreenLine(document.querySelectorAll('.baseLine'))
 document.querySelector('.milleseconds').innerHTML = Date.now() - new Date(2017)
 document.querySelector('.year').innerHTML = new Date().getFullYear()
 // document.querySelector('.expYear').innerHTML = new Date().getFullYear() - 2017 + '+'
-function Slider(options) {
-	let elem = options.elem
-	let prev = options.prev
-	let next = options.next
-	let count = 0
-	function slide() {
-		for (let i = 0; i < elem.length; i++) {
-			elem[i].classList.add('hidden')
+const Slider = (options) => {
+	let elems = options.elems, prev = options.prev, next = options.next, count = 0
+	const slide = () => {
+		for (let elem of elems) {
+			elem.classList.add('hidden')
 		}
-		elem[count].classList.remove('hidden')
+		elems[count].classList.remove('hidden')
 	}
 	slide()
-	prev.onclick = function () {
-		count <= 0 ? count = elem.length - 1 : count--
+	prev.onclick = () => {
+		count <= 0 ? count = elems.length - 1 : count--
 		slide()
 	}
-	next.onclick = function () {
-		count >= elem.length - 1 ? count = 0 : count++
+	next.onclick = () => {
+		count >= elems.length - 1 ? count = 0 : count++
 		slide()
 	}
 }
-new Slider({
-	elem: document.querySelectorAll('.slider > div'),
+Slider({
+	elems: document.querySelectorAll('.slider > div'),
 	prev: document.querySelector('.prev'),
 	next: document.querySelector('.next')
 })
@@ -43,9 +37,9 @@ arrow.onclick = () => {
 		behavior: 'smooth'
 	})
 }
-window.onscroll = function () {
+window.addEventListener('scroll', () => {
 	arrow.hidden = document.documentElement.clientHeight / 2 > document.documentElement.scrollTop
-}
+})
 /*
 arrowUp.onclick = function (e) {
 	let start = Date.now()

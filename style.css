@@ -26,8 +26,8 @@ html, body {
 	font-weight: normal;
 }
 body {
-	font-family: 'Righteous';
-	font-family:  'Gugi', cursive;
+	font-family: 'Righteous', cursive;
+	font-family: 'Gugi', cursive;
 	text-transform: uppercase;
 	color: white;
 }
@@ -56,6 +56,9 @@ i, button {
 i {
 	display: inline-block;
 }
+textarea {
+	resize: none;
+}
 .block3 *, .block5 *,
 footer p,
 footer input::placeholder,
@@ -68,20 +71,22 @@ header {
 	position: relative;
 }
 nav, section {
-	width: 100%;
-	max-width: 960px;
+	max-width: 1080px;
 	margin: 0 auto;
 	padding: 20px;
 	text-align: center;
 }
-nav > ul, article {
+ul, article {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;	
 }
-ul {
-	margin: 0;
+header a {
+	font-size: 16px;
+}
+header a:hover {
+	color: #7028e4;
 }
 main {
 	background: url(images/body_back.png);
@@ -100,7 +105,7 @@ main {
 	height: 19px;
 	position: absolute;
 	left: 18px;
-	top: 18px;
+	top: 32px;
 	background: url(images/ukraine.png) center center / 100% no-repeat, white;
 }
 /* block1 */
@@ -115,6 +120,9 @@ main {
 .block1 span {
 	font-size: 20px;
 }
+.block1 section hgroup {
+	padding: 160px 0 110px;
+}
 .block1 section hgroup * {
 	/*animation: colorFont 8s infinite alternate;*/
 }
@@ -125,7 +133,7 @@ main {
     background-clip: text;
 }
 .button {
-	width: 170px;
+	width: 240px;
 	margin: 10px auto;
 	padding: 10px 20px;
 	border: 1px solid white;
@@ -134,6 +142,9 @@ main {
 	letter-spacing: 5px;
 	color: white;
 	text-transform: uppercase;
+}
+.block1 .button {
+	margin-bottom: 60px;
 }
 /* block2 */
 .block2 article > * {
@@ -257,6 +268,7 @@ main {
 	background: url(images/portfolio_img_1.jpg) center center no-repeat;
 	background-size: cover;
 	border: 5px solid white;
+	transition: all .2s;
 }
 .secondIcon {
 	background: url(images/portfolio_img_2.jpg) center center no-repeat;
@@ -269,6 +281,9 @@ main {
 .fourthIcon {
 	background: url(images/portfolio_img_4.jpg) center center no-repeat;
 	background-size: cover;
+}
+.block5 a div:hover {
+	border-color: #00FFFF;
 }
 /*block6*/
 .block6 {
@@ -367,6 +382,9 @@ main {
 	background: linear-gradient(to bottom left, #ff0072, #a21af0);
 	padding-bottom: 40px;
 }
+.experience article {
+	margin-bottom: 40px;
+}
 .block7 .experience * {
 	margin: 10px;
 }
@@ -424,9 +442,9 @@ main {
 .blockImg3 {
 	background: url(images/blog_img_3.png) center center no-repeat;
 }
-.block8 p {
+/* .block8 p {
 	text-transform: lowercase;
-}
+} */
 /* footer */
 footer {
 	display: flex;
@@ -434,6 +452,9 @@ footer {
 	align-items: center;
 	text-align: center;
 	background: url(images/footer_back.png);
+}
+footer section {
+	width: 100%;
 }
 .contact {
 	margin: 50px auto;
@@ -448,9 +469,10 @@ footer input, footer textarea {
     font-size: 14px;
 }
 footer textarea {
-	height: 70px;
+	height: 80px;
 }
 footer .button {
+	margin-top: 40px;
 	letter-spacing: normal;
 }
 footer p {
@@ -470,7 +492,7 @@ footer p {
 #arrowUp:hover {
 	opacity: 1;
 }
-#coverId {
+/* #coverId {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -499,9 +521,30 @@ footer p {
     color: black;
     border: 3px solid #5f27cd;
     border-radius: 10px;
+} */
+
+@media (max-width: 1440px) {
+	.block1 section hgroup {
+		padding: 80px 0 60px;
+	}
+	.block1 .button {
+		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: 920px) {
+	section {
+		padding: 40px 0;
+	}
+	.contact {
+		width: 880px;
+	}
 }
 
 @media (max-width: 820px) {
+	header a {
+		font-size: 13px;
+	}
 	.block8 article > div {
 		flex: unset;
 	}
@@ -509,8 +552,14 @@ footer p {
 
 @media (max-width: 640px) {
 	header ul {
-		flex-direction: column;
+		margin: 0;
 		padding: 0;
+	}
+	.block3 article, header ul {
+		flex-direction: column;
+	}
+	.block1 section hgroup {
+		padding: 40px 0;
 	}
 	.grid {
 		grid-template-columns: repeat(2, 1fr);
@@ -529,6 +578,10 @@ footer p {
 		order: 3;
 		text-align: left;
 	}
+	footer input {
+		flex: unset;
+		width: 100%;
+	}
 	#arrowUp {
 		padding: 6px;
 	}
@@ -537,7 +590,7 @@ footer p {
 	button {
 		width: 75%;
 	}
-	.block3 article, .block7 article {
+	.block7 article {
 		flex-flow: column;
 	}
 	.block7 .experience article h4,
