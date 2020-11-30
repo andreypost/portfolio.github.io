@@ -4,7 +4,8 @@ const widthGreenLine = (elems) => {
 	}
 }
 widthGreenLine(document.querySelectorAll('.baseLine'))
-document.querySelector('.milleseconds').innerHTML = Date.now() - new Date(2017)
+document.querySelector('.milleseconds').innerHTML = parseInt((Date.now() - new Date(2017, 1, 11)) / 86400000)
+// document.querySelector('.milleseconds').innerHTML = Date.now() - new Date(2017)
 document.querySelector('.year').innerHTML = new Date().getFullYear()
 // document.querySelector('.expYear').innerHTML = new Date().getFullYear() - 2017 + '+'
 const Slider = (options) => {
