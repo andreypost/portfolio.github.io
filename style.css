@@ -462,6 +462,11 @@ main {
 	background: url(images/group.png);
 }
 
+/*freds*/
+.frends img {
+	max-width: 100%;
+}
+
 /* block7 */
 
 .block7 {
