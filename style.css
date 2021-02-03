@@ -346,6 +346,11 @@ main {
 	background-size: cover;
 }
 
+.icon_08 {
+	background: url(images/portfolio_08.jpg) center center no-repeat;
+	background-size: cover;
+}
+
 .block5 a div:hover {
 	border-color: #00FFFF;
 }
