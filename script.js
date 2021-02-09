@@ -41,6 +41,15 @@ arrow.onclick = () => {
 window.addEventListener('scroll', () => {
 	arrow.hidden = document.documentElement.clientHeight / 2 > document.documentElement.scrollTop
 })
+document.addEventListener('click', (e) => {
+	if (e.target.dataset.section) {
+		e.preventDefault()
+		window.scrollBy({
+			top: document.querySelector(`.${e.target.dataset.section}`).getBoundingClientRect().top,
+			behavior: 'smooth'
+		})
+	}
+})
 /*
 arrowUp.onclick = function (e) {
 	let start = Date.now()

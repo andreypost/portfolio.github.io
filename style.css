@@ -669,6 +669,9 @@ footer p {
 	.block8 article>div {
 		flex: unset;
 	}
+	i, button, a {
+		cursor: unset;
+	}
 }
 
 @media (max-width: 768px) {
