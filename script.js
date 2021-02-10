@@ -32,12 +32,6 @@ Slider({
 	next: document.querySelector('.next')
 })
 let arrow = document.getElementById('arrowUp')
-arrow.onclick = () => {
-	window.scrollBy({
-		top: -window.scrollY,
-		behavior: 'smooth'
-	})
-}
 window.addEventListener('scroll', () => {
 	arrow.hidden = document.documentElement.clientHeight / 2 > document.documentElement.scrollTop
 })
@@ -46,6 +40,11 @@ document.addEventListener('click', (e) => {
 		e.preventDefault()
 		window.scrollBy({
 			top: document.querySelector(`.${e.target.dataset.section}`).getBoundingClientRect().top,
+			behavior: 'smooth'
+		})
+	} else if (e.target.closest('#arrowUp')) {
+		window.scrollBy({
+			top: -window.scrollY,
 			behavior: 'smooth'
 		})
 	}
