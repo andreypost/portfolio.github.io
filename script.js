@@ -82,18 +82,4 @@ arrowUp.onclick = function (e) {
 // 		}
 // 	}
 // }
-// const showCover = (width, right) => {
-// 	coverId.hidden = false
-// 	document.body.style.overflow = 'hidden'
-// 	document.body.style.paddingRight = document.documentElement.clientWidth - width + 'px'
-// 	arrowUp.style.right = right + document.documentElement.clientWidth - width + 'px'
-// }
-// const hideCover = (width, right) => {
-// 	coverId.hidden = true
-// 	document.getElementById('modalId').remove()
-// 	document.body.style.overflowY = ''
-// 	document.body.style.paddingRight = 0 + 'px'
-// 	arrowUp.style.right = right + 'px'
-// 	document.onkeydown = null
-// }
 
