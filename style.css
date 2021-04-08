@@ -311,43 +311,48 @@ main {
 	transition: all .2s;
 }
 
-.icon_01 {
+.project_01 {
 	background: url(images/portfolio_01.jpg) center center no-repeat;
 	background-size: cover;
 }
 
-.icon_02 {
+.project_02 {
 	background: url(images/portfolio_02.jpg) center center no-repeat;
 	background-size: cover;
 }
 
-.icon_03 {
+.project_03 {
 	background: url(images/portfolio_03.jpg) center center no-repeat;
 	background-size: cover;
 }
 
-.icon_04 {
+.project_04 {
 	background: url(images/portfolio_04.jpg) center center no-repeat;
 	background-size: cover;
 }
 
-.icon_05 {
+.project_05 {
 	background: url(images/portfolio_05.jpg) center center no-repeat;
 	background-size: cover;
 }
 
-.icon_06 {
+.project_06 {
 	background: url(images/portfolio_06.jpg) center center no-repeat;
 	background-size: cover;
 }
 
-.icon_07 {
+.project_07 {
 	background: url(images/portfolio_07.jpg) center center no-repeat;
 	background-size: cover;
 }
 
-.icon_08 {
+.project_08 {
 	background: url(images/portfolio_08.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.project_09 {
+	background: url(images/portfolio_09.jpg) center center no-repeat;
 	background-size: cover;
 }
 
@@ -468,8 +473,17 @@ main {
 }
 
 /*freds*/
-.frends img {
-	max-width: 100%;
+
+.frends_view {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.frends_view img {
+	max-width: 220px;
 }
 
 /* block7 */
