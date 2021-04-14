@@ -80,7 +80,7 @@ header {
 	position: relative;
 }
 
-nav, section {
+.section {
 	max-width: 1080px;
 	margin: 0 auto;
 	padding: 20px;
@@ -142,11 +142,11 @@ main {
 	font-size: 20px;
 }
 
-.block1 section hgroup {
+.block1 .section hgroup {
 	padding: 160px 0 110px;
 }
 
-.block1 section hgroup * {
+.block1 .section hgroup * {
 	/*animation: colorFont 8s infinite alternate;*/
 }
 
@@ -175,7 +175,7 @@ main {
 
 /* block2 */
 
-.block2 article>* {
+.block2>* {
 	flex: 1 270px;
 	margin: 15px;
 }
@@ -214,15 +214,11 @@ main {
 	background: #dcdcde;
 }
 
-.block3 article {
-	align-items: unset;
-}
-
-.block3 div {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	margin: 10px;
+.block3 .section {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 300px);
+	gap: 30px;
+	justify-content: center;
 }
 
 .block3 a {
@@ -288,7 +284,7 @@ main {
 
 /* block5 */
 
-.block5 section>article>div {
+.block5 .section>article>div {
 	flex: 1;
 	align-self: baseline;
 	text-align: right;
@@ -367,11 +363,11 @@ main {
 	background-size: cover;
 }
 
-.block6 section {
+.block6 .section {
 	position: relative;
 }
 
-.block6 section>i {
+.block6 .section>i {
 	position: absolute;
 	top: 47%;
 	opacity: .5;
@@ -381,7 +377,7 @@ main {
 	z-index: 9999;
 }
 
-.block6 section>i:hover {
+.block6 .section>i:hover {
 	opacity: 1;
 }
 
@@ -483,7 +479,7 @@ main {
 }
 
 .frends_view img {
-	max-width: 220px;
+	max-width: 200px;
 }
 
 /* block7 */
@@ -580,7 +576,7 @@ footer {
 	background: url(images/footer_back.png);
 }
 
-footer section {
+footer .section {
 	width: 100%;
 }
 
@@ -659,7 +655,7 @@ footer p {
 } */
 
 @media (max-width: 1440px) {
-	.block1 section hgroup {
+	.block1 .section hgroup {
 		padding: 80px 0 60px;
 	}
 	.block1 .button {
@@ -668,7 +664,7 @@ footer p {
 }
 
 @media (min-width: 920px) {
-	section {
+	.section {
 		padding: 40px 0;
 	}
 	.contact {
@@ -693,10 +689,10 @@ footer p {
 		margin: 0;
 		padding: 0;
 	}
-	.block3 article, header ul {
+	header ul {
 		flex-direction: column;
 	}
-	.block1 section hgroup {
+	.block1 .section hgroup {
 		padding: 40px 0;
 	}
 	.grid {
@@ -736,6 +732,9 @@ footer p {
 	.portfolio_icons div {
 		width: 120px;
 		height: 120px;
+	}
+	.frends_view img {
+		max-width: 100%;
 	}
 	.block7 article {
 		flex-flow: column;
