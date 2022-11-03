@@ -307,6 +307,10 @@ main {
 	background: url(images/portfolio_09.jpg) center center no-repeat;
 	background-size: cover;
 }
+.project_10 {
+	background: url(images/portfolio_10.jpg) center center no-repeat;
+	background-size: cover;
+}
 .block5 a div:hover {
 	border-color: #00ffff;
 }
