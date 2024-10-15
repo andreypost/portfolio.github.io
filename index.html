@@ -1,305 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>portfolio</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<link rel="apple-touch-icon" href="./images/favicon.png">
-	<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Righteous&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
-	<title>portfolio</title>
-</head>
-
-<body>
-	<header class="home">
-		<div class="flag"></div>
-		<nav class="section">
-			<ul class="flex_align_center home_nav">
-				<li><a href="" data-section="home">home</a></li>
-				<li>-</li>
-				<li><a href="" data-section="block2">about</a></li>
-				<li>-</li>
-				<li><a href="" data-section="block4">hightlights</a></li>
-				<li>-</li>
-				<li><a href="" data-section="block5">portfolio</a></li>
-				<li>-</li>
-				<li><a href="" data-section="block6">qualities</a></li>
-				<li>-</li>
-				<li><a href="" data-section="block7">experience</a></li>
-				<li>-</li>
-				<li><a href="" data-section="contact">contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<div class="block1">
-			<div>
-				<div class="section">
-					<hgroup>
-						<h2>hello, i am</h2>
-						<h1>andrii</h1>
-						<h4>i have <span class="milleseconds"></span> days of experience</h4>
-						<!-- <h4>i have more than <span class="milleseconds"></span> milliseconds of experience</h4> -->
-					</hgroup>
-					<a href="https://drive.google.com/file/d/1Te7wtyferx7FmzMC1UIAJVW5ueutYx66/view?usp=sharing"
-						class="button" target="_blank">see my cv</a>
-				</div>
-			</div>
-		</div>
-		<article class="flex_align_center block2 section">
-			<hgroup>
-				<h2>andrii postoliuk</h2>
-				<h3>front end web developer</h3>
-				<h6>I am very responsible and well-organized person I have a great desire to develop and improve
-					my knowledge</h6>
-			</hgroup>
-			<div class="photo"></div>
-			<div class="rateBlock">
-				<p>JavaScript, Typescript, CSS, HTML (<span class="rateLine">95</span>%)</p>
-				<div class="baseLine">
-					<div class="growLine"></div>
-				</div>
-				<p>Vue.js, Nuxt, React, Redux, Sanity, JQuery, Styled-Components, Sass, Less (<span class="rateLine">90</span>%)</p>
-				<div class="baseLine">
-					<div class="growLine"></div>
-				</div>
-				<p>Material UI, Bootstrap, UIkit (<span class="rateLine">80</span>%)</p>
-				<div class="baseLine">
-					<div class="growLine"></div>
-				</div>
-				<p>Webpack, Gulp, NPM, REST APIs, Ajax, Firebase, Git, CI/CD, Jira, KanbanFlow (<span class="rateLine">65</span>%)</p>
-				<div class="baseLine">
-					<div class="growLine"></div>
-				</div>
-			</div>
-		</article>
-		<div class="block3">
-			<div class="section">
-				<div>
-					<a href="tel:+380673788612" class="phone"></a>
-					<h4>phone number</h4>
-					<a href="tel:+380673788612">tel: 067-378-86-12</a>
-				</div>
-				<div>
-					<i class="address"></i>
-					<h4>address</h4>
-					<a href="" onclick="return false">Ukraine<br>Kyiv</a>
-				</div>
-				<div>
-					<a href="mailto:postoliuk.av@gmail.com" class="email"></a>
-					<h4>email address</h4>
-					<a href="mailto:postoliuk.av@gmail.com">postoliuk.av@gmail.com</a>
-				</div>
-			</div>
-		</div>
-		<div class="block4">
-			<div class="section">
-				<hgroup>
-					<h2>hightlights</h2>
-					<h3>Programming languages, Libraries, Frameworks, Graphics software</h3>
-				</hgroup>
-				<div class="grid">
-					<div>
-						<i class="first"></i>
-						<h4>JavaScript, Typescript, CSS, HTML</h4>
-					</div>
-					<div>
-						<i class="second"></i>
-						<h4>Vue.js, Nuxt, React, Redux, Sanity, JQuery, Styled-Components, Sass, Less</h4>
-					</div>
-					<div>
-						<i class="third"></i>
-						<h4>Material UI, Bootstrap, UIkit</h4>
-					</div>
-					<div>
-						<i class="fourth"></i>
-						<h4>Figma, Sketch (Lunacy), Photoshops, Xd</h4>
-					</div>
-					<div>
-						<i class="fifth"></i>
-						<h4>Webpack, Gulp, NPM, REST APIs, Ajax, Firebase</h4>
-					</div>
-					<div>
-						<i class="sixth"></i>
-						<h4>Git, CI/CD, Jira, KanbanFlow</h4>
-					</div>
-				</div>
-				<p>I continue in-depth study and improvement of skills in this area!</p>
-			</div>
-		</div>
-		<div class="block5">
-			<div class="section">
-				<hgroup>
-					<h2>portfolio</h2>
-					<h3>My works performed by different technologies</h3>
-				</hgroup>
-				<div>
-					<!-- <div>
+  <body>
+    <header class="home">
+      <div class="flag"></div>
+      <nav class="section">
+        <ul class="flex_align_center home_nav">
+          <li><a href="" data-section="home">home</a></li>
+          <li>-</li>
+          <li><a href="" data-section="block2">about</a></li>
+          <li>-</li>
+          <li><a href="" data-section="block4">hightlights</a></li>
+          <li>-</li>
+          <li><a href="" data-section="block5">portfolio</a></li>
+          <li>-</li>
+          <li><a href="" data-section="block6">qualities</a></li>
+          <li>-</li>
+          <li><a href="" data-section="block7">experience</a></li>
+          <li>-</li>
+          <li><a href="" data-section="contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="block1">
+        <div>
+          <div class="section">
+            <hgroup>
+              <h2>hello, i am</h2>
+              <h1>andrii</h1>
+              <h4>
+                i have <span class="milleseconds"></span> days of experience
+              </h4>
+              <!-- <h4>i have more than <span class="milleseconds"></span> milliseconds of experience</h4> -->
+            </hgroup>
+            <a
+              href="https://docs.google.com/document/d/1hpTUqGjla39KQiU140eFNfVn_qHEsUoyiVUdd7PBstY/edit?usp=drive_link"
+              class="button"
+              target="_blank"
+              >see my cv</a
+            >
+          </div>
+        </div>
+      </div>
+      <article class="flex_align_center block2 section">
+        <hgroup>
+          <h2>andrii postoliuk</h2>
+          <h3>full stack web developer</h3>
+          <h6>
+            I am very responsible and well-organized person I have a great
+            desire to develop and improve my knowledge
+          </h6>
+        </hgroup>
+        <div class="photo"></div>
+        <div class="rateBlock">
+          <p>
+            JavaScript, TypeScript, Node.js, Express, NestJS, REST APIs,
+            PostgreSQL, TypeORM, GraphQL, apollo/server, Firebase API (<span
+              class="rateLine"
+              >80</span
+            >%)
+          </p>
+          <div class="baseLine">
+            <div class="growLine"></div>
+          </div>
+          <p>
+            React, Redux, Vue, Vuex, Nuxt, GraphQL, apollo/client, Sanity,
+            Netlify, jQuery (<span class="rateLine">90</span>%)
+          </p>
+          <div class="baseLine">
+            <div class="growLine"></div>
+          </div>
+          <p>
+            CSS, HTML, CSS-in-JS styles, Styled-Components, Sass, Less,
+            Material-UI, Bootstrap, UIkit (<span class="rateLine">95</span>%)
+          </p>
+          <div class="baseLine">
+            <div class="growLine"></div>
+          </div>
+          <p>
+            Webpack, Gulp, NPM, Cypress, Jest, ESLint, Prettier, GitHub, GitHub
+            Actions, CI/CD, Jira, KanbanFlow (<span class="rateLine">75</span>%)
+          </p>
+          <div class="baseLine">
+            <div class="growLine"></div>
+          </div>
+        </div>
+      </article>
+      <div class="block3">
+        <div class="section">
+          <div>
+            <a href="tel:+380673788612" class="phone"></a>
+            <h4>phone number</h4>
+            <a href="tel:+380673788612">tel: 067-378-86-12</a>
+          </div>
+          <div>
+            <i class="address"></i>
+            <h4>address</h4>
+            <a href="" onclick="return false">Ukraine<br />Kyiv</a>
+          </div>
+          <div>
+            <a href="mailto:postoliuk.av@gmail.com" class="email"></a>
+            <h4>email address</h4>
+            <a href="mailto:postoliuk.av@gmail.com">postoliuk.av@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="block4">
+        <div class="section">
+          <hgroup>
+            <h2>hightlights</h2>
+            <h3>
+              Programming languages, Libraries, Frameworks, Graphics software
+            </h3>
+          </hgroup>
+          <div class="grid">
+            <div>
+              <i class="first"></i>
+              <h4>
+                JavaScript, TypeScript, Node.js, Express, NestJS, REST APIs,
+                PostgreSQL, TypeORM, GraphQL, apollo/server, Firebase API
+              </h4>
+            </div>
+            <div>
+              <i class="second"></i>
+              <h4>
+                React, Redux, Vue, Vuex, Nuxt, GraphQL, apollo/client, Sanity,
+                Netlify, jQuery
+              </h4>
+            </div>
+            <div>
+              <i class="third"></i>
+              <h4>
+                CSS, HTML, CSS-in-JS styles, Styled-Components, Sass, Less,
+                Material-UI, Bootstrap, UIkit
+              </h4>
+            </div>
+            <div>
+              <i class="fourth"></i>
+              <h4>
+                Webpack, Gulp, NPM, Cypress, Jest, ESLint, Prettier, GitHub,
+                GitHub Actions, CI/CD, Jira, KanbanFlow
+              </h4>
+            </div>
+            <div>
+              <i class="fifth"></i>
+              <h4>
+                Google Analytics, AMP pages, Microdata schema, The Open Graph
+                protocol, htaccess, robots.txt, sitemap.xml
+              </h4>
+            </div>
+            <div>
+              <i class="sixth"></i>
+              <h4>
+                Figma, Sketch (Lunacy), Photoshop, XD, Cross-browser layout,
+                “mobile first” approach
+              </h4>
+            </div>
+          </div>
+          <p>
+            I continue in-depth study and improvement of skills in this area!
+          </p>
+        </div>
+      </div>
+      <div class="block5">
+        <div class="section">
+          <hgroup>
+            <h2>portfolio</h2>
+            <h3>My works performed by different technologies</h3>
+          </hgroup>
+          <div>
+            <!-- <div>
 						<a href="#portfolio">all</a>
 						<a href="#portfolio">presentation</a>
 						<a href="#portfolio">work ideas</a>
 					</div> -->
-					<div class="flex_align_center portfolio_icons">
-						<a href="https://unagiscooters.com/" target="_blank">
-							<div class="project_10"></div>
-						</a>
-						<a href="https://sandclock-org.web.app/" target="_blank">
-							<div class="project_09"></div>
-						</a>
-						<a href="https://syvochka.com/" target="_blank">
-							<div class="project_05"></div>
-						</a>
-						<a href="https://lapchenko.clinic/" target="_blank">
-							<div class="project_02"></div>
-						</a>
-						<a href="https://35fit.com/en/main" target="_blank">
-							<!-- <a href="https://andreypost.github.io/35fit/" target="_blank"></a> -->
-							<div class="project_03"></div>
-						</a>
-						<a href="https://andreypost.github.io/sun-for-you/" target="_blank">
-							<div class="project_08"></div>
-						</a>
-						<a href="https://andreypost.github.io/avm-react-app/" target="_blank">
-							<div class="project_04"></div>
-						</a>
-						<a href="https://andreypost.github.io/tradenet-plus/" target="_blank">
-							<div class="project_06"></div>
-						</a>
-						<!-- <a href="https://andreypost.github.io/liniya/" target="_blank">
+            <div class="flex_align_center portfolio_icons">
+              <a href="https://unagiscooters.com/" target="_blank">
+                <div class="project_10"></div>
+              </a>
+              <!-- <a href="https://35fit.com/en/main" target="_blank"> -->
+              <a href="https://fit-35.web.app" target="_blank">
+                <div class="project_03"></div>
+              </a>
+              <a href="https://sandclock-org.web.app/" target="_blank">
+                <div class="project_09"></div>
+              </a>
+              <a href="https://syvochka.com/" target="_blank">
+                <div class="project_05"></div>
+              </a>
+              <a href="https://lapchenko.clinic/" target="_blank">
+                <div class="project_02"></div>
+              </a>
+              <a
+                href="https://andreypost.github.io/sun-for-you/"
+                target="_blank"
+              >
+                <div class="project_08"></div>
+              </a>
+              <a
+                href="https://andreypost.github.io/avm-react-app/"
+                target="_blank"
+              >
+                <div class="project_04"></div>
+              </a>
+              <a
+                href="https://andreypost.github.io/tradenet-plus/"
+                target="_blank"
+              >
+                <div class="project_06"></div>
+              </a>
+              <!-- <a href="https://andreypost.github.io/liniya/" target="_blank">
 							<div class="project_07"></div>
 						</a> -->
-						<a href="https://andreypost.github.io/portfolio/" target="_blank">
-							<div class="project_01"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="block6">
-			<div class="section">
-				<i class="prev"></i>
-				<hgroup>
-					<h2>personal qualities</h2>
-				</hgroup>
-				<div class="carousel">
-					<div class="slider" id="slider">
-						<div>
-							<h3>positive attitude</h3>
-							<i class="sun"></i>
-						</div>
-						<div>
-							<h3>self-learning</h3>
-							<i class="battery"></i>
-						</div>
-						<div>
-							<h3>communicative</h3>
-							<i class="group"></i>
-						</div>
-						<div>
-							<h3>responsible</h3>
-							<i class="briefcase"></i>
-						</div>
-						<div>
-							<h3>organized</h3>
-							<i class="book"></i>
-						</div>
-					</div>
-				</div>
-				<i class="next"></i>
-				<h5>I like to create high-quality projects</h5>
-			</div>
-		</div>
-		<div class="block7">
-			<div class="section">
-				<hgroup>
-					<h2>experience</h2>
-				</hgroup>
-				<div class="experience">
-					<div class="experience_box order_01">
-						<article class="experience_header">
-							<h3>Itransition Group</h3>
-							<h4>2021 – Present, fully remote</h4>
-							<h4>Vue.js, React Front End Developer</h4>
-						</article>
-						<div class="experience_descript">
-							<hr>
-							<p>- create and develop websites, and SPA application from initial design, implementing all
-								cross-browser and multi-platform compatibility;</p>
-							<p>- fixing bugs from existing websites and implementing enhancements that significantly
-								improved web functionality and speed;</p>
-							<p>- work closely with programmers and clients to meet project requirements, goals, and
-								desired
-								functionality;</p>
-							<p>- keep up with best practices, recommending improvements to websites to provide an
-								optimal
-								experience for customers.</p>
-						</div>
-					</div>
-					<div class="experience_box order_02">
-						<article class="experience_header">
-							<h3>WEB studio Pear Solution</h3>
-							<h4>2019 – 2021, Kyiv</h4>
-							<h4>React Front End Developer</h4>
-						</article>
-						<div class="experience_descript">
-							<hr>
-							<p>- collaborated with design, product, and back-end teams to create and develop dynamic and
-								interactive websites;</p>
-							<p>- ensured scalability of front end elements by optimizing them for loading speed and
-								performance;</p>
-							<p>- maintained both corporate and client websites.</p>
-						</div>
-					</div>
-					<div class="experience_box order_01">
-						<article class="experience_header">
-							<h3>Freelance</h3>
-							<h4>2018 – 2019, Kyiv</h4>
-							<h4>React Front End Developer</h4>
-						</article>
-						<div class="experience_descript">
-							<hr>
-							<h5>(35FIT │ Boutique fitness studio)</h5>
-							<p>- start project based on the Ruby on Rails framework architecture template
-								Model-View-Controller;</p>
-							<p>- optimal page layout and well-thought-out information structure (47 pages, 6 modals);
-							</p>
-							<p>- implementation of all interactive user registration logic;</p>
-							<p>- implemented a complex calendar for recording visitors to classes (JavaScript);</p>
-							<p>- everything is completely adaptive for all types of screens (from 320px to 1440px) and
-								cross-browser;</p>
-							<p>- recreated this project to the modern React framework for further presentation.</p>
-							<h5>(Lapchenko | dental clinic)</h5>
-							<p>- creating an interactive world map SWG;</p>
-							<p>- implementation visit counters and other quantitative indicators;</p>
-							<p>- creation of modals for specialist diplomas;</p>
-							<p>- footer update with animation;</p>
-							<p>- constantly updating and adding articles to the blog (wordpress);</p>
-							<p>- rewrote HTML to meet industry and company standards for SEO and Accessibility;</p>
-							<p>- code cleaning and optimization;</p>
-							<p>- all tasks are implemented adaptively for all types of screens and cross-browser;</p>
-							<p>- SEO tasks: connecting and configuring web statistics, setting up a click map,
-								creating a sitemap, adding Microdata shema, editing and creating htaccess rules, setting
-								up
-								redirects, troubleshooting and indexing, duplicate pages, broken links.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section" class="frends">
-			<article>
-				<h2>My friends!</h2>
-			</article>
-			<div class="frends_view">
-				<img src="./images/friends_01.jpg" alt="">
-				<img src="./images/friends_02.jpg" alt="">
-				<img src="./images/friends_03.jpg" alt="">
-				<img src="./images/friends_04.jpg" alt="">
-			</div>
-		</div>
-		<!-- <div class="block8" id="blog">
+              <a href="https://andreypost.github.io/portfolio/" target="_blank">
+                <div class="project_01"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block6">
+        <div class="section">
+          <i class="prev"></i>
+          <hgroup>
+            <h2>personal qualities</h2>
+          </hgroup>
+          <div class="carousel">
+            <div class="slider" id="slider">
+              <div>
+                <h3>positive attitude</h3>
+                <i class="sun"></i>
+              </div>
+              <div>
+                <h3>self-learning</h3>
+                <i class="battery"></i>
+              </div>
+              <div>
+                <h3>communicative</h3>
+                <i class="group"></i>
+              </div>
+              <div>
+                <h3>responsible</h3>
+                <i class="briefcase"></i>
+              </div>
+              <div>
+                <h3>organized</h3>
+                <i class="book"></i>
+              </div>
+            </div>
+          </div>
+          <i class="next"></i>
+          <h5>I like to create high-quality projects</h5>
+        </div>
+      </div>
+      <div class="block7">
+        <div class="section">
+          <hgroup>
+            <h2>experience</h2>
+          </hgroup>
+          <div class="experience">
+            <div class="experience_box order_01">
+              <article class="experience_header">
+                <h3>Itransition Group</h3>
+                <h4>(2021 – Present)</h4>
+                <h4>Full Stack Developer</h4>
+              </article>
+              <div class="experience_descript">
+                <hr />
+                <p>
+                  - create and develop websites, and SPA application from
+                  initial design, implementing all cross-browser and
+                  multi-platform compatibility;
+                </p>
+                <p>
+                  - fixing bugs from existing websites and implementing
+                  enhancements that significantly improved web functionality and
+                  speed;
+                </p>
+                <p>
+                  - work closely with programmers and clients to meet project
+                  requirements, goals, and desired functionality;
+                </p>
+                <p>
+                  - keep up with best practices, recommending improvements to
+                  websites to provide an optimal experience for customers.
+                </p>
+              </div>
+            </div>
+            <div class="experience_box order_02">
+              <article class="experience_header">
+                <h3>WEB studio Pear Solution</h3>
+                <h4>2019 – 2021, Kyiv</h4>
+                <h4>Front End Developer</h4>
+              </article>
+              <div class="experience_descript">
+                <hr />
+                <p>
+                  - collaborated with design, product, and back-end teams to
+                  create and develop dynamic and interactive websites;
+                </p>
+                <p>
+                  - ensured scalability of front end elements by optimizing them
+                  for loading speed and performance;
+                </p>
+                <p>- maintained both corporate and client websites.</p>
+              </div>
+            </div>
+            <div class="experience_box order_01">
+              <article class="experience_header">
+                <h3>Freelance</h3>
+                <h4>2018 – 2019, Kyiv</h4>
+                <h4>Front End Developer</h4>
+              </article>
+              <div class="experience_descript">
+                <hr />
+                <h5>(35FIT │ Boutique fitness studio)</h5>
+                <p>
+                  - start project based on the Ruby on Rails framework
+                  architecture template Model-View-Controller;
+                </p>
+                <p>
+                  - optimal page layout and well-thought-out information
+                  structure (47 pages, 6 modals);
+                </p>
+                <p>
+                  - implementation of all interactive user registration logic;
+                </p>
+                <p>
+                  - implemented a complex calendar for recording visitors to
+                  classes (JavaScript);
+                </p>
+                <p>
+                  - everything is completely adaptive for all types of screens
+                  (from 320px to 1440px) and cross-browser;
+                </p>
+                <p>
+                  - recreated this project to the modern React framework for
+                  further presentation.
+                </p>
+                <h5>(Lapchenko | dental clinic)</h5>
+                <p>- creating an interactive world map SWG;</p>
+                <p>
+                  - implementation visit counters and other quantitative
+                  indicators;
+                </p>
+                <p>- creation of modals for specialist diplomas;</p>
+                <p>- footer update with animation;</p>
+                <p>
+                  - constantly updating and adding articles to the blog
+                  (wordpress);
+                </p>
+                <p>
+                  - rewrote HTML to meet industry and company standards for SEO
+                  and Accessibility;
+                </p>
+                <p>- code cleaning and optimization;</p>
+                <p>
+                  - all tasks are implemented adaptively for all types of
+                  screens and cross-browser;
+                </p>
+                <p>
+                  - SEO tasks: connecting and configuring web statistics,
+                  setting up a click map, creating a sitemap, adding Microdata
+                  shema, editing and creating htaccess rules, setting up
+                  redirects, troubleshooting and indexing, duplicate pages,
+                  broken links.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" class="frends">
+        <article>
+          <h2>My friends!</h2>
+        </article>
+        <div class="frends_view">
+          <img src="./images/friends_01.jpg" alt="" />
+          <img src="./images/friends_02.jpg" alt="" />
+          <img src="./images/friends_03.jpg" alt="" />
+          <img src="./images/friends_04.jpg" alt="" />
+        </div>
+      </div>
+      <!-- <div class="block8" id="blog">
 			<div class="section">
 				<hgroup>
 					<h2>blog</h2>
@@ -336,34 +433,47 @@
 				</article>
 			</div>
 		</div> -->
-	</main>
-	<footer>
-		<div class="section">
-			<div class="contact">
-				<hgroup>
-					<h2>contact me</h2>
-					<h3>I will be glad to receive your job offer</h3>
-				</hgroup>
-				<form action="https://formspree.io/mnqabzye" method="POST" id="form">
-					<article class="flex_align_center">
-						<input type="text" name="name" placeholder="Name" required="">
-						<input type="tel" name="phone" placeholder="Phone" required="">
-						<input type="email" name="email" placeholder="Email" required="">
-					</article>
-					<article class="flex_align_center">
-						<textarea name="message" placeholder="message" required=""></textarea>
-					</article>
-				</form>
-				<button type="submit" form="form" class="button" id="btnSubmit">send message</button>
-			</div>
-		</div>
-		<p>Copyright <span class="year"></span> by andrey.post.in.ua All Rights Reserved.</p>
-		<i id="arrowUp" hidden=""></i>
-	</footer>
-	<div id="coverId" hidden></div>
-	<script src="script.js"></script>
-</body>
-
+    </main>
+    <footer>
+      <div class="section">
+        <div class="contact">
+          <hgroup>
+            <h2>contact me</h2>
+            <h3>I will be glad to receive your job offer</h3>
+          </hgroup>
+          <form action="https://formspree.io/mnqabzye" method="POST" id="form">
+            <article class="flex_align_center">
+              <input type="text" name="name" placeholder="Name" required="" />
+              <input type="tel" name="phone" placeholder="Phone" required="" />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required=""
+              />
+            </article>
+            <article class="flex_align_center">
+              <textarea
+                name="message"
+                placeholder="message"
+                required=""
+              ></textarea>
+            </article>
+          </form>
+          <button type="submit" form="form" class="button" id="btnSubmit">
+            send message
+          </button>
+        </div>
+      </div>
+      <p>
+        Copyright <span class="year"></span> by andrii.postoliuk.in.ua All
+        Rights Reserved.
+      </p>
+      <i id="arrowUp" hidden=""></i>
+    </footer>
+    <div id="coverId" hidden></div>
+    <script src="script.js"></script>
+  </body>
 </html>
 
 <!-- How to conduct an interview with a customer
